@@ -1,0 +1,31 @@
+@charset "utf-8" !important;
+
+@media (max-width: 1000px){
+	#albumBackground {
+    	position: relative !important;
+		align-self: flex-start !important;
+		width: 100%;
+	}
+	.input {
+		position: relative !important;
+		vertical-align:bottom !important;
+		align-self: flex-end !important;
+		width: 100% !important;
+		margin: auto !important;
+	}
+	.input > * {
+		margin: 10px !important;
+	}
+	.input > label{
+		margin: 25px !important;
+	}
+	br {
+    display: none;	
+	}
+	.album {
+		flex-direction: column !important;
+		justify-content: flex-start !important;
+		align-items: flex-start !important;
+		flex-wrap: nowrap !important;
+	}
+}
