@@ -11,8 +11,6 @@
 	max-height: 100vh;
 	margin: auto;
 	object-fit: contain;
-	width: 900px;
-	height: 900px;
 }
 
 .album {
@@ -32,10 +30,34 @@
 	height: 100%;
 	flex-grow: 1;
 	width: 20vw;
+	margin: 10px;
+	text-align: center;
+	font-family: "SpiritPhone";
+	font-size: 5em;
 }
 
 .input > * {
-	height: auto;
+	height: 50px;
+	width: 100%;
+	margin: 25px;
+}
+
+input {
+	text-align: center;
+	font-family: "SpiritPhone";
+	font-size: 0.5em;
+	box-shadow: none;
+	border: 0;
+	background-color: rgba(255,255,255,0.20);
+	transition: background-color 0.25s ease;
+	color: white;
+}
+
+input:hover {
+	background-color: rgba(255,255,255,0.40);
+}
+input:focus {
+	background-color: rgba(255,255,255,0.40);
 }
 
 body {
