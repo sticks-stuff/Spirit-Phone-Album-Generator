@@ -22,7 +22,42 @@ window.onload = function() {
 	}
 	img.src = 'spiritPhoneBackground.png';
 	imgDebug.src = 'Lemon-Demon-Spirit-Phone.png';
+
+	document.getElementById("toptext").addEventListener("change",function () {
+		reDraw();
+
+	})
+
+	document.getElementById("bottomtext").addEventListener("change",function () {
+		reDraw();
+	})
 }
+
+function reDraw() {
+	var canvas = document.getElementById("albumBackground");
+	var ctx = canvas.getContext("2d");
+	var img = new Image();
+	ctx.globalAlpha = 1;
+	var imgDebug = new Image();
+	var f = new FontFace('SpiritPhone', 'url(SpiritPhone.ttf)');
+	ctx.clearRect(0, 0, canvas.width, canvas.height);img.onload = function() {
+		ctx.drawImage(img, 0, 0);
+		f.load().then(function() {
+			ctx.font = "105px SpiritPhone";
+			ctx.fillStyle = "white";
+			ctx.textAlign = "left";
+			wrapText(ctx, document.getElementById("toptext").value, 84, 135, 362, 75, 2.5);
+			ctx.font = "300px SpiritPhone";
+			wrapText(ctx, document.getElementById("bottomtext").value, 75, 325, 362, 189, 3);
+			ctx.globalAlpha = 0.4;
+			imgDebug.onload = function() {
+				//ctx.drawImage(imgDebug, 0, 0);
+			}
+		});
+	}
+	img.src = 'spiritPhoneBackground.png';
+	imgDebug.src = 'Lemon-Demon-Spirit-Phone.png';
+}											
 function wrapText(context, text, x, y, maxWidth, lineHeight, spacing) {
 	var words = text.split(' ');
 	var line = '';
