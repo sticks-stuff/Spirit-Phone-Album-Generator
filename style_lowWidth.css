@@ -12,12 +12,16 @@
 		align-self: flex-end !important;
 		width: 100% !important;
 		margin: auto !important;
+		font-size: 15vw !important
 	}
 	.input > * {
-		margin: 10px !important;
+		margin: 0.5vw !important;
 	}
 	.input > label{
-		margin: 25px !important;
+		margin: 1vw !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	br {
     display: none;	
