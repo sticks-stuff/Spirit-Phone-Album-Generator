@@ -1,5 +1,11 @@
 /* CSS Document */
-.albumBackground {
+
+@font-face {
+  font-family: "Spirit Phone";
+  src: url("SpiritPhone.ttf") format('truetype');
+}
+
+#albumBackground {
 	max-width: 100%;
 	max-height: 100vh;
 	margin: auto;
@@ -12,6 +18,22 @@
 	align-items: center;
     justify-content: center;
 }
+
+/*
+.topText {
+	color: white;
+	font-family: "Spirit Phone";
+	position: absolute;
+	font-size: 4em;
+}
+
+.bottomText {
+	color: white;
+	position: absolute;
+	font-family: "Spirit Phone";
+	font-size: 8em;
+}
+*/
 
 body {
 	background-color:black;
