@@ -1,0 +1,72 @@
+/* CSS Document */
+
+@font-face {
+  font-family: "SpiritPhone";
+  src: url("SpiritPhone.ttf") format('truetype');
+}
+
+#albumBackground {
+	position:relative;
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+	object-fit: contain;
+}
+
+.album {
+	display: flex;
+	height: 100%;
+	align-items: center;
+    justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.input {
+	position:absolute;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	flex-grow: 1;
+	width: 20vw;
+	margin: 10px;
+	text-align: center;
+	font-family: "SpiritPhone";
+	font-size: 5em;
+}
+
+.input > * {
+	height: 50px;
+	width: 100%;
+	margin: 25px;
+}
+
+input {
+	text-align: center;
+	font-family: "SpiritPhone";
+	font-size: 0.5em;
+	box-shadow: none;
+	border: 0;
+	background-color: rgba(255,255,255,0.20);
+	transition: background-color 0.25s ease;
+	color: white;
+}
+
+input:hover {
+	background-color: rgba(255,255,255,0.40);
+}
+input:focus {
+	background-color: rgba(255,255,255,0.40);
+}
+
+body {
+	background-color:black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
